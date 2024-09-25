@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Player</title>
+  <link rel="stylesheet" href="job2.css">
+</head>
+<body>
+  <div class="music-player">
+    <div class="playlist">
+      <h2>Playlist</h2>
+      <ul id="playlist-list">
+        <li data-src="track1.mp3">Track 1</li>
+        <li data-src="track2.mp3">Track 2</li>
+        <li data-src="track3.mp3">Track 3</li>
+      </ul>
+    </div>
+    <div class="controls">
+      <button id="prev-btn">Previous</button>
+      <button id="play-btn">Play</button>
+      <button id="pause-btn">Pause</button>
+      <button id="next-btn">Next</button>
+      <input type="range" id="volume-slider" min="0" max="100" value="50">
+    </div>
+    <div class="current-track">
+      <h3 id="current-track-title">No Track Selected</h3>
+    </div>
+    <div class="add-track">
+      <h2>Add Track</h2>
+      <form id="add-track-form">
+        <input type="text" id="track-title" placeholder="Track Title" required>
+        <input type="text" id="track-src" placeholder="Track Source (URL)" required>
+        <button type="submit">Add Track</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="job2.js"></script>
+</body>
+</html>
